@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation HTML</title>
+
+    <style>
+        .container{
+            width: 80vh;
+            height: 30vh;
+            background-color: beige;
+        }
+        .box{
+            width: 10vw;
+            height: 5vh;
+            background-color: aquamarine;
+            /* transition: all 4s ease-in-out ; */
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+            animation: mza 3s ease-in-out 1s 1,
+                        test 3s ease-in-out 1s 1;
+        }
+        /* .traverse{
+            transform: translateX(14vw) translateY(14vh);
+        } */
+        @keyframes mza {
+            from{
+
+            }
+            to{
+                transform: translateX(70vw);
+            }
+            
+        }
+        @keyframes test {
+            0%{
+                background-color: antiquewhite;
+            }
+            50%{
+                background-color: aqua;
+            }
+            75%{
+                background-color: blanchedalmond;
+            }
+            100%{
+                background-color: blue;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box traverse">
+            BOX
+        </div>
+    </div>
+</body>
+</html>
